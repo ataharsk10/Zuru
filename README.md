@@ -15,7 +15,7 @@ python -m pyls -A
 ```bash
 python -m pyls -l
 ```
-## Prints the results in reverse order.  -------
+## Prints the results in reverse order.
 ```bash
 python -m pyls -l -r
 ```
