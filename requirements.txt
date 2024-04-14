@@ -1,0 +1,8 @@
+## Developement Requirements 
+black == 24.3.0 #For formatting
+dvc == 3.49.0 #For data version control
+flake8 == 7.0.0 #For style violations of PEP8
+mypy == 1.9.0 #For check code type errors 
+pytest == 8.1.1 #For test
+tox == 4.11.4 #To automate and standardize the testing process
+-e .

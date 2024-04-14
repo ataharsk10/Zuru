@@ -1,0 +1,6 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.pyls.entry_points]
+console_scripts = ["pyls = pyls.__main__:expand"]

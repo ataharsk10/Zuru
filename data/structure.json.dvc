@@ -1,0 +1,5 @@
+outs:
+- md5: d3f4a4d60d3ae9e12d2917ff7503c768
+  size: 2105
+  hash: md5
+  path: structure.json

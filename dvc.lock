@@ -1,0 +1,30 @@
+schema: '2.0'
+stages:
+  build:
+    cmd: python -m pyls --dirpath=data/structure.json
+  Subtask 1:
+    cmd: python -m pyls
+  Subtask 2:
+    cmd: python -m pyls -A
+  Subtask 3:
+    cmd: python -m pyls -l
+  Subtask 4:
+    cmd: python -m pyls -l -r
+  Subtask 5:
+    cmd: python -m pyls -l -r -t
+  Subtask 6.1:
+    cmd: python -m pyls -l -r -t --filter=dir
+  Subtask 6.2:
+    cmd: python -m pyls -l -r -t --filter=file
+  Subtask 6.3:
+    cmd: python -m pyls -l -r -t --filter=folder
+  Subtask 7.1:
+    cmd: python -m pyls -l parser
+  Subtask 7.2:
+    cmd: python -m pyls -l parser/parser.go
+  Subtask 7.3:
+    cmd: python -m pyls non_existent_path
+  Subtask 8:
+    cmd: python -m pyls -l -h parser
+  Subtask 9:
+    cmd: python -m pyls --help
