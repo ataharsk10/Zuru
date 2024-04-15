@@ -42,6 +42,11 @@ def parse_json(filepath:str) -> Dict:
 
 # Check if the provided path is exists or not
 def handle_path(path: str,data: Dict) -> Dict:
+    """
+    This function will take filepath and Data,
+    traverse into the given filepath, return,
+    if not found exit
+    """
     try:
         path_components = path.split('/')
         current_directory = data
@@ -74,6 +79,10 @@ def handle_path(path: str,data: Dict) -> Dict:
 
 # Function to list out files and directories
 def ls(directory: Dict, show_hidden: bool = False, use_long_format: bool = False) -> List[str]:
+    """
+    This function takes directory and list
+    out the files
+    """
     try:
         files=[]
         # If directory is a file
@@ -111,6 +120,9 @@ def ls(directory: Dict, show_hidden: bool = False, use_long_format: bool = False
     
 #Human readable size function
 def human_readable_size(size: int) -> str:
+    """
+    This function converts the size in to human readable format
+    """
     try:
         suffixes = ['B', 'K', 'M', 'G', 'T']
         index = 0
@@ -124,6 +136,9 @@ def human_readable_size(size: int) -> str:
 
 # Function to display 
 def display(files: List[FileInfo], use_long_format: bool = False, reverse_order: bool = False, sort_by_time: bool = False, filter_option: Union[bool, str] = False, human_readable: bool = False) -> None:
+    """
+    This function takes files, and prints it
+    """
     try:
         if use_long_format == False:
             print(' '.join(files))
